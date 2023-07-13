@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+header {
+    width: 100%;
+    height: 120px;
+    background-color: #ee4d2d;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+.logo-search img {
+    height: 50px;
+    width: auto;
+}
+
+.logo-cart {
+    display: flex;
+    justify-content: center;
+}

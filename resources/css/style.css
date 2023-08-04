@@ -3,26 +3,113 @@
 }
 body {
     margin: 0;
+
 }
 header {
     width: 100%;
     height: 120px;
     background-color: #ee4d2d;
+
+    position: fixed;
+    top: 0;
 }
 .menu {
     display: flex;
     justify-content: space-between;
+    color: white;
 }
 .menu a {
+    padding: 0 5px;
     text-decoration: none;
     color: white;
 }
+
 .logo-search img {
     height: 50px;
     width: auto;
 }
+.logo-shopee {
+    padding-top: 20px;
+    padding-left: 5px;
+}
+.input-search {
+    height: 42px;
+
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2px;
+}
 
 .logo-cart {
+    /* display: flex;
+    justify-content: center; */
+
+    padding-top: 40px;
+    padding-left: 60px;
+}
+.logo-cart img {
+    width: auto ;
+    height: 20px;
+}
+.row-center {
+    padding-top: 28px;
+}
+
+.option-select {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+.row .option-select {
+    padding-top: 5px;
+}
+.option-select a {
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+}
+
+
+/* BANNER */
+.banner {
+    margin-top: 150px;
+    height: 235px;
+    background-color: red;
+}
+
+/* SLIDER */
+.slider {
+    margin-top: 20px;
+    height: 360px;
+    background-color: green;
+}
+
+
+
+
+/* .line-end {
+    margin-top: 70px;
+    width: 100%;
+    height: 5px;
+    background-color: #ee4d2d;
+} */
+/* FOOTER */
+footer{
+    margin-top: 70px;
+    background-color: wheat;
+    height: 850px;
+
+    border-top: #ee4d2d solid 5px;
+}
+
+.footer-top {
+    height: 430px;
+    background-color: blue;
+}
+.footer-center {
+    height: 100px;
+    background-color: white;
+}
+.footer-buttom {
+    background-color: red;
+    height: 320px;
 }

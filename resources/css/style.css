@@ -3,7 +3,6 @@
 }
 body {
     margin: 0;
-
 }
 header {
     width: 100%;
@@ -73,8 +72,8 @@ header {
 .banner {
     margin-top: 150px;
     height: 235px;
-    background-color: red;
 }
+
 
 /* SLIDER */
 .slider {
@@ -83,7 +82,71 @@ header {
     background-color: green;
 }
 
+.main-banner {
+    /* padding: auto; */
+    border: black solid 1px;
+    position: relative;
 
+    display: flex;
+}
+.main-banner img {
+    z-index: -1;
+}
+.main-banner button {
+    opacity: 0;
+    position: absolute;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0,0,0,.09);
+    border: none;
+
+    top: 40%;
+}
+.main-banner:hover button {
+    opacity: 1;
+}
+.main-banner button:hover {
+    opacity: 1;
+    background-color: rgba(0,0,0,.5);
+}
+
+.img-banner {
+    height: 235px;
+}
+.dot-banner {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+}
+.dot-banner-item {
+    width: 9px;
+    height: 9px;
+    background-color: white;
+    opacity: 0.4;
+    margin: 5px;
+    border: gray solid 1px;
+    border-radius: 9999px;
+}
+.btn-left-banner {
+    
+    left: 0;
+}
+.btn-right-banner {
+    right: 0;
+}
+
+.but-temp, .top-temp {
+    height: 115px;
+}
+.but-temp {
+    margin-top: 5px;
+}
+
+.but-temp img, .top-temp img {
+    height: 115px;
+    width: 100%;
+}
 
 
 /* .line-end {

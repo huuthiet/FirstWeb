@@ -3,6 +3,8 @@
 }
 body {
     margin: 0;
+    background-color: rgba(0,0,0,.09);
+    position: relative;
 }
 header {
     width: 100%;
@@ -75,13 +77,6 @@ header {
 }
 
 
-/* SLIDER */
-.slider {
-    margin-top: 20px;
-    height: 360px;
-    background-color: green;
-}
-
 .main-banner {
     /* padding: auto; */
     border: black solid 1px;
@@ -148,15 +143,103 @@ header {
     width: 100%;
 }
 
-
+ 
 /* .line-end {
     margin-top: 70px;
     width: 100%;
     height: 5px;
     background-color: #ee4d2d;
 } */
+
+/* SLIDER */
+.slider {
+    margin-top: 20px;
+    height: 360px;
+    background-color: green;
+
+    position: relative;
+    z-index: -1;
+}
+.btn-left-slider, .btn-right-slider {
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    height: 30px;
+
+    border-radius: 9999px;
+}
+.btn-left-slider {
+    left: -10px;
+}
+.btn-right-slider {
+    right: -10px;
+}
+
+.name-slider {
+    height: 60px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.slider-line1, .slider-line2 {
+    height: 150px;
+}
+.option:hover  .btn-left-slider, 
+.option:hover  .btn-right-slider{
+    background-color: red;
+    height: 100px;
+}
+/* .slider-line2:hover  */
+.option-item {
+    border: black solid 1px;
+    /* height: 100px; */
+}
+
+/* CONTENT */
+.content {
+    margin-top: 20px;
+    
+}
+.name-content {
+    height: 60px;
+
+    color: #ee4d2d;
+    background-color: white;
+
+    border-bottom: #ee4d2d solid 5px;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    position: sticky;
+    top: 120px;
+
+    z-index: -1;
+}
+
+.product {
+    height: 280px;
+    margin-top: 15px;
+}
+.product-item {
+    border: black solid 1px;
+    z-index: -2;
+    background-color: white;
+}
+
+
+.btn-more {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.btn-more .btn {
+    width: 390px;
+    height: 40px;
+    background-color: white;
+}
 /* FOOTER */
-footer{
+footer {
     margin-top: 70px;
     background-color: wheat;
     height: 850px;
@@ -166,13 +249,44 @@ footer{
 
 .footer-top {
     height: 430px;
-    background-color: blue;
+    background-color: white;
+    padding-left: 10px;
+}
+.footer-top a {
+    text-decoration: none;
+    
+}
+.footer-top .btn{
+    margin-bottom: 10px;
 }
 .footer-center {
+    padding-top: 30px;
     height: 100px;
     background-color: white;
+    
+    display: flex;
+    justify-content: space-between;
+
+    border-top: rgba(0,0,0,.09) solid 1px;
 }
+.footer-center a {
+    text-decoration: none;
+}
+
 .footer-buttom {
     background-color: red;
     height: 320px;
+}
+.footer-buttom a {
+    text-decoration: none;
+    margin: 30px 20px;
+}
+.footer-buttom div:first-child {
+    display: flex;
+    justify-content: center;
+}
+.footer-buttom div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

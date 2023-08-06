@@ -267,6 +267,7 @@
         display: none;
     }
     .l-1,
+    .l-1-2,
     .l-2,
     .l-2-4,
     .l-3,
@@ -285,6 +286,10 @@
     .l-1 {
         flex: 0 0 8.33333%;
         max-width: 8.33333%;
+    }
+    .l-1-2 {
+        flex: 0 0 10%;
+        max-width:10%;
     }
     .l-2 {
         flex: 0 0 16.66667%;
@@ -407,6 +412,7 @@
         display: none;
     }
     .wide .l-1,
+    .wide .l-1-2,
     .wide .l-2,
     .wide .l-2-4,
     .wide .l-3,
@@ -425,6 +431,10 @@
     .wide .l-1 {
         flex: 0 0 8.33333%;
         max-width: 8.33333%;
+    }
+    .wide .l-1-2 {
+        flex: 0 0 10%;
+        max-width: 10%;
     }
     .wide .l-2 {
         flex: 0 0 16.66667%;
